@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="random number generator">
+    <meta name="keywords" content="random, math">
+    <meta name="author" content="sean mcleod">
+    <title>Random Math</title>
+  </head>
+  <body>
+    <input id="hi" type="textbox">
+    <p>Type any number between <b>1</b> to <b>6</b> and check if you got it right!</p>
+    <button onclick="myfunction()">Check</button>
+    <script>
+      function myfunction() {
+      let salt
+      salt= Math.floor(Math.random() * 7);
+      if (document.getElementById("hi").value ==salt)
+      alert ("You are correct!!")
+      else
+      alert ("You are wrong")
+      }
+    </script>
+  </body>
+</html>
